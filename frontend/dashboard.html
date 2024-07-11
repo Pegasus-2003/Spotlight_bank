@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Dashboard</title>
+    <link href="assets/img/favicon-32x32.png" rel="icon">
+    <link href="assets/img/apple-icon-180x180.png" rel="apple-touch-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendor/boxicons/css/boxicons.css">
+    <link rel="stylesheet" href="assets/vendor/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/vendor/boxicons/css/animations.css">
+    <link rel="stylesheet" href="assets/vendor/boxicons/css/transformations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="assets/css/UserDash.css">
+    <style>
+        @media only screen and (min-width:992px) {
+            #credit {
+                display: block;
+                box-sizing: border-box;
+                height: 181px;
+                width: 363px;
+            }
+        }
+        table{
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="wrapper ribbon ribbon-top-right">
+        <div class="overlay"></div>
+        <nav class="fixed-top align-top" id="sidebar-wrapper" role="navigation">
+            <div class="simplebar-content" style="padding: 0px;">
+                <a class="sidebar-brand" href="index.html">
+                    <span class="align-middle">Spotlight Bank </span>
+                </a>
+                <ul class="navbar-nav align-self-stretch">
+                    <li class="menuHover">
+                        <a href="Dashboard.html" id="Dashboard" class="nav-link text-left " role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="flaticon-bar-chart-1"></i><i class="bx bxs-dashboard ico"></i> Dashboard
+                        </a>
+                    </li>
+                    <li class="menuHover">
+                        <a href="transfer.html" id="Transfer" class="nav-link text-left" role="button">
+                            <i class="flaticon-bar-chart-1"></i><i class="bx bx-transfer ico"></i> Transfer
+                        </a>
+                    </li>
+                    <li class="menuHover">
+                        <a href="t_history.html" id="TransactionHistory" class="nav-link text-left" role="button">
+                            <i class="flaticon-bar-chart-1"></i> <i class="bx bx-history ico"></i> Transaction History
+                        </a>
+                    </li>
+                    
+                    <li class="menuHover">
+                        <a href="cards.html" id="Cards" class="nav-link text-left" role="button">
+                            <i class="flaticon-bar-chart-1"></i> <i class="bx bxs-credit-card ico"></i>Cards
+                        </a>
+                    </li>
+                    <li class="menuHover">
+                        <a class="nav-link text-left" role="button" href="index.html">
+                            <i class="flaticon-map"></i><i class="bx bx-log-out ico"></i> Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="page-content-wrapper">
+            <div id="content">
+                <div class="container-fluid p-0 px-lg-0 px-md-0">
+                    <nav class="navbar navbar-expand navbar-light my-navbar">
+                        <div type="button" id="bar" class="nav-icon1 hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <form class="d-none d-sm-inline-block form-inline navbar-search">
+                            <div class="input-group">
+                                <h1 id="bankBrand" style="font-size: 24px; color:blue" class="mt-2">Spotlight Bank</h1>
+                            </div>
+                        </form>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item dropdown  d-sm-none">
+    
+                                <div class="dropdown-menu dropdown-menu-right p-3">
+                                    <form class="form-inline mr-auto w-100 navbar-search">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for...">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-primary" type="button">
+                                                    <i class="fas fa-search fa-sm"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="login.html" id="userDropdown" role="button" data-toggle="dropdown">
+                                    <span class="mr-2 d-none d-lg-inline text-gray-600 small">Logout </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+    
+        <div class="container-fluid px-lg-4">
+            <div class="row">
+                <div class="col-md-12 mt-lg-4 mt-4">
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-4">Balance</h5>
+                                    <h1 id="BalanceDisplay" class="display-5 mt-1 mb-3"></h1>
+                                    <div class="mb-1">
+                                        <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i></span>
+                                        <span class="text-muted" id="balanceSpan">Your Total Balance</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-4 ">Credited this Month</h5>
+                                    <h1 id="CreditDisplay" class="display-5 mt-1 mb-3 text-success"></h1>
+                                    <div class="mb-1">
+                                        <span id="CreditLastM" class="text-success"> <i class="mdi mdi-arrow-bottom-right"></i></span>
+                                        <span class="text-muted" id="creditspan">Since last Month</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-4">Debited this Month</h5>
+                                    <h1 id="DebitDisplay" class="display-5 mt-1 mb-3 text-danger"></h1>
+                                    <div class="mb-1">
+                                        <span id="DebitLastM" class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> </span>
+                                        <span class="text-muted" id="debitspan">Since last Month</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-md-12 mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-md-flex align-items-center">
+                                <div>
+                                    <h4 class="card-title">Transaction History</h4>
+                                    <h5 class="card-subtitle">Overview of recent transaction</h5>
+                                </div>
+                                <div class="ml-auto">
+                                    <a href="t_history.html" class="btn btn-info" role="button">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table v-middle">
+                                <thead>
+                                    <tr class="bg-light">
+                                        <th class="border-top-0">Transaction Id</th>
+                                        <th class="border-top-0">From Account No</th>
+                                        <th class="border-top-0">To Account No</th>
+                                        <th class="border-top-0">Date</th>
+                                        <th class="border-top-0">Amount</th>
+                                        <th class="border-top-0">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tableData"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+        <footer class="footer">
+        
+            <div class="container-fluid">
+                <div class="row text-muted">
+                    <div class="col-6 text-left">
+                        <p class="mb-0">
+                            <a href="index.html" class="text-muted"><strong>Spotlight Bank
+                                </strong></a> &copy
+                        </p>
+                    </div>
+                    <div class="col-6 text-right">
+                        <ul class="list-inline">
+                            <li class="footer-item">
+                                <a class="text-muted" href="privacypolicy.html">Privacy</a>
+                            </li>
+                            <li class="footer-item">
+                                <a class="text-muted" href="terms.html">Terms</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        </div>
+        </div>
+        </div>
+        
+       
+        
+    </div>
+    <script src="javascript/dashboard.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+    <script>
+        $('#bar').click(function () {
+            $(this).toggleClass('open');
+            $('#page-content-wrapper ,#sidebar-wrapper').toggleClass('toggled');
+
+        });
+    </script>
+
+
+    
+</body>
+
+</html>
